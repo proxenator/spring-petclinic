@@ -8,7 +8,7 @@ pipeline {
         stage ('Build') {
             steps {
                 // Get code from Git
-                git branch: 'main', url: 'https://github.com/proxenator/spring-petclinic.git'
+                git branch: 'main', url: 'https://github.com/spring-projects/spring-petclinic.git'
 
                 // Run maven
                 sh "mvn clean package"
